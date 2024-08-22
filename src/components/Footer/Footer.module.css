@@ -1,0 +1,7 @@
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: solid;
+    color: #ecf0f1;
+}
