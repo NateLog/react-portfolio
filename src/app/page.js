@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className={styles.main}>body</div>
+      <div className={styles.main}>body is this working</div>
       <Footer />
     </div>
   );
