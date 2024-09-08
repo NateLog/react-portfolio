@@ -1,0 +1,56 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%
+  }
+  
+
+.logoWrapper {
+    height: 100px;
+    aspect-ratio: 2;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  text-wrap: wrap;
+  padding: 6px;
+  cursor: pointer;
+}
+
+  .logo {
+    height: 100%;
+    border-radius: 5px;
+  }
+  .logoText{
+    width: 50%;
+    border: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navlinks{
+    list-style: none;
+    
+    font-size: 50px;
+    padding: 10px
+  }
+
+  .navlinks li {
+    display: inline-block;
+    padding: 5px 30px;
+    margin: 20px;
+
+  }
+
+  .navlinks li a{
+    transition: all 0.3s ease 0s;
+  }
+
+  .navlinks li a:hover{
+    color:blueviolet;
+  }
