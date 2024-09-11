@@ -1,29 +1,20 @@
 import styles from "./Header.module.css";
+import Navbar from "../Navbar/Navbar";
+import { Sun, Moon } from "react-feather";
 
 function Header() {
   return (
     <div className={styles.head}>
       <div className={styles.logoWrapper}>
-        <img className={styles.logo} src="/AnimeMe.jpeg" />
-        <div className={styles.logoText}>Nathan Wright</div>
+        <div className={styles.logoText}>
+          nathan.
+          <span className={styles.logoSubtext}>developement</span>
+        </div>
       </div>
-      <nav>
-        <ul className={styles.navlinks}>
-          <li>
-            <a href="home">Home</a>
-          </li>
-          <li>
-            <a href="projects">Projects</a>
-          </li>
-          <li>
-            <a href="contact">Contact Me</a>
-          </li>
-          <li>
-            <a href="About">About Me</a>
-          </li>
-        </ul>
-      </nav>
-      <button>Do something soon</button>
+      <Navbar />
+      <button className={styles.darkModeButton}>
+        <Sun />
+      </button>
     </div>
   );
 }

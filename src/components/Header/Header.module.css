@@ -1,56 +1,60 @@
 .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%
-  }
-  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px;
+}
 
 .logoWrapper {
-    height: 100px;
-    aspect-ratio: 2;
-    border: solid;
-    border-width: 1px;
-    border-radius: 5px;
-  color: #ecf0f1;
+  height: 50px;
+  aspect-ratio: 5.5;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  /* color: #ecf0f1; */
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.5rem;
-  text-wrap: wrap;
   padding: 6px;
   cursor: pointer;
 }
 
-  .logo {
-    height: 100%;
-    border-radius: 5px;
-  }
-  .logoText{
-    width: 50%;
-    border: none;
-    text-align: center;
-    align-items: center;
-  }
+/* .logoWrapper :hover {
+  height: 60px;
+} */
 
-  .navlinks{
-    list-style: none;
-    
-    font-size: 50px;
-    padding: 10px
-  }
+.logo {
+  height: 100%;
+  border-radius: 5px;
+}
+.logoText {
+  width: 100%;
+  border: none;
+  border-color: black;
+  text-align: left;
+  align-items: baseline;
+  font-weight: 1000;
+}
 
-  .navlinks li {
-    display: inline-block;
-    padding: 5px 30px;
-    margin: 20px;
+.logoSubtext {
+  font-weight: 150;
+}
 
-  }
+.darkModeButton {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: none;
+  color: black;
+  font-weight: 300;
+  opacity: 0.7;
+  transition: opacity 500ms;
+  cursor: pointer;
+}
 
-  .navlinks li a{
-    transition: all 0.3s ease 0s;
-  }
-
-  .navlinks li a:hover{
-    color:blueviolet;
-  }
+.darkModeButton :hover {
+  opacity: 1;
+}
