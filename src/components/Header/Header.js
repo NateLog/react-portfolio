@@ -9,7 +9,7 @@ function Header() {
       <Link href="/" className={styles.logoWrapper}>
         <div className={styles.logoText}>
           nathan.
-          <span className={styles.logoSubtext}>developement</span>
+          <span className={styles.logoSubtext}>development</span>
         </div>
       </Link>
       <Navbar />
