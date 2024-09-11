@@ -1,7 +1,15 @@
-.foot {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border: solid;
-    color: #ecf0f1;
+.footerWrapper {
+  display: flex;
+  justify-content: center;
+  /* border: solid; */
+}
+
+.footerContent {
+  text-wrap: wrap;
+  text-align: center;
+  padding: 50px;
+  max-width: 600px;
+  opacity: 0.8;
+  font-weight: 50;
+  font-size: smaller;
 }
