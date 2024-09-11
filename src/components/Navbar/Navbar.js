@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Navbar.module.css";
+import Link from "next/link";
 
 function Navbar() {
   const [hoveredNavLink, setHoveredNavLink] = React.useState(null);
@@ -22,9 +23,9 @@ function Navbar() {
             {hoveredNavLink === slug && (
               <motion.div layoutId={id} className={styles.hoveredBackdrop} />
             )}
-            <a href={href} onMouseEnter={() => setHoveredNavLink(slug)}>
+            <Link href={href} onMouseEnter={() => setHoveredNavLink(slug)}>
               {label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
