@@ -13,15 +13,12 @@
   border: solid;
   border-width: 1px;
   border-radius: 5px;
-  /* color: #ecf0f1; */
-  color: black;
   text-decoration: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 1.5rem;
   padding: 6px;
-  cursor: pointer;
 }
 
 .darkModeButton {
@@ -32,7 +29,6 @@
   padding: 8px 16px;
   text-decoration: none;
   background: none;
-  color: black;
   font-weight: 300;
   opacity: 0.7;
   transition: opacity 500ms;
@@ -50,7 +46,7 @@
 .logoText {
   width: 100%;
   border: none;
-  border-color: black;
+  /* border-color: black; */
   text-align: left;
   align-items: baseline;
   font-weight: 1000;
