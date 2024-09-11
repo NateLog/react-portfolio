@@ -11,7 +11,10 @@ function Projects() {
       </p>
       <p>
         Here is a link to a short film with Hans Rosling:{" "}
-        <a href="https://www.youtube.com/watch?v=jbkSRLYSojo&ab_channel=BBC">
+        <a
+          href="https://www.youtube.com/watch?v=jbkSRLYSojo&ab_channel=BBC"
+          target="_blank"
+        >
           Please watch
         </a>{" "}
         :-)
