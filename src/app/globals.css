@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 html,
@@ -18,7 +18,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem 3rem;
   min-height: 100vh;
 }
 
@@ -45,6 +45,10 @@ html {
   background: var(--color-backdrop-highlight);
 }
 
+h1 {
+  margin-bottom: 0.5em;
+}
+
 body {
   background: var(--color-backdrop);
   color: currentColor;
@@ -53,6 +57,10 @@ body {
 a {
   background: var(--color-backdrop);
   color: currentColor;
+}
+
+p {
+  margin-bottom: 1.5em;
 }
 
 body::before {

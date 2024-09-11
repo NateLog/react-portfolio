@@ -50,6 +50,8 @@
   text-align: left;
   align-items: baseline;
   font-weight: 1000;
+  opacity: 0.8;
+  transition: 500ms;
 }
 
 .logoSubtext {
@@ -57,6 +59,10 @@
 }
 
 .darkModeButton :hover {
+  opacity: 1;
+}
+
+.logoWrapper :hover {
   opacity: 1;
 }
 
