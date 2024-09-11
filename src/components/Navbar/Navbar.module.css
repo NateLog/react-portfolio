@@ -24,7 +24,7 @@
 .navlinks a {
   display: block;
   position: relative;
-  padding: 8px 16px;
+  padding: 8px 8px;
   text-decoration: none;
   background: none;
   color: black;
@@ -35,4 +35,16 @@
 
 .navlinks a:hover {
   opacity: 1;
+}
+
+@media (min-width: 776px) {
+  .navlinks a {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .navlinks {
+    flex-direction: column;
+  }
 }

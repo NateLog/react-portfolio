@@ -64,7 +64,7 @@
   opacity: 1;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 695px) {
   .darkModeButton {
     order: 2;
   }
