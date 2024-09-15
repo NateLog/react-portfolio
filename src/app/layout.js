@@ -6,7 +6,7 @@ import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import { LIGHT_TOKENS, DARK_TOKENS } from "@/constants";
+import { LIGHT_TOKENS, DARK_TOKENS, COLOR_THEME_COOKIE } from "@/constants";
 
 export const metadata = {
   title: "Nathan's Portfolio",
@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const savedColorTheme = cookies().get("color-theme");
+  const savedColorTheme = cookies().get(COLOR_THEME_COOKIE);
   const theme = savedColorTheme?.value || "light";
   return (
     <html

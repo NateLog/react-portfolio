@@ -1,0 +1,17 @@
+.datawrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border: solid;
+  height: 3000px;
+}
+
+.datarow {
+  height: 6em;
+  width: 9em;
+  border: solid;
+}
+.databox {
+  padding: 1rem;
+}
