@@ -7,6 +7,7 @@ async function InsertInitialData(JSONDataArray) {
 }
 
 async function GetCSVData(path) {
+  console.log(path);
   const rawData = await fs.readFile(path, "utf8");
 
   const lines = rawData.split("\n");
@@ -26,11 +27,11 @@ async function GetCSVData(path) {
   return objectifiedData;
 }
 
-async function main() {
+async function LoadSeedData() {
   console.log("it's  running!");
-  const path = "@/DATA/IncomePCByTime.csv";
+  const path = "./src/DATA/IncomePCByTime.csv";
   const JSONDataArray = await GetCSVData(path);
   const countDataEntered = await PrismaQuery("createMany", JSONDataArray);
   return countDataEntered;
 }
-export default main;
+export default LoadSeedData;
