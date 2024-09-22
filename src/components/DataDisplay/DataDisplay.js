@@ -1,21 +1,23 @@
 import React from "react";
-
-import { sql } from "@vercel/postgres";
-import {
-  CreatePopulationTable,
-  RetrieveData,
-  InsertInitialData,
-  GetCSVData,
-} from "@/utils";
-
-//const JSONCSV = await GetCSVData("./src/DATA/IncomePCByTime.csv");
-//await InsertInitialData(JSONCSV);
+import { promises as fs } from "fs";
+import { FormatSourceToJSON } from "@/utils";
+import CheckBoxList from "../CheckBoxList/CheckBoxList";
+import { countryCodes } from "@/DATA/countryCodeJSON";
 
 async function DataDisplay({ params }) {
-  const data = await RetrieveData("all");
-  console.log(data);
+  const file = await fs.readFile(
+    process.cwd() + "/src/DATA/sourceData.json",
+    "utf8"
+  );
+  const allData = JSON.parse(file);
 
-  return <div> </div>;
+  //FormatSourceToJSON();
+
+  return (
+    <div>
+      <CheckBoxList objList={countryCodes} paramKey="countryCode" />
+    </div>
+  );
 }
 
 export default DataDisplay;
